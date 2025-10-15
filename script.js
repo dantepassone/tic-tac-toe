@@ -85,12 +85,12 @@ class TicTacToe {
         this.scores[this.currentPlayer]++;
         this.updateScore();
         this.highlightWinningCells();
-        this.updateGameStatus(`${this.currentPlayer} wins! 🎉`);
+        this.updateGameStatus(`${this.currentPlayer} wins!`);
     }
     
     handleTie() {
         this.gameActive = false;
-        this.updateGameStatus('It\'s a tie! 🤝');
+        this.updateGameStatus('It\'s a tie!');
     }
     
     highlightWinningCells() {
