@@ -1,104 +1,69 @@
-# 🎮 Tic Tac Toe Game
+# Tic Tac Toe
 
-A classic Tic Tac Toe game implemented with pure HTML, CSS, and JavaScript. Simple, fun, and fully functional!
+A classic Tic Tac Toe game implemented with pure HTML, CSS, and JavaScript.
 
-## 🚀 Features
+## Live Demo
 
-- **Modern and responsive interface**: Attractive design that works on any device
-- **Two-player game**: Automatic alternation between X and O
-- **Score system**: Keeps track of each player's victories
-- **Smooth animations**: Visual effects for better experience
-- **Win detection**: Highlights winning cells
-- **Easy reset**: Buttons for new game and reset score
+Play the game online: [https://dantepassone.github.io/tic-tac-toe/](https://dantepassone.github.io/tic-tac-toe/)
 
-## 🎯 How to play
+## Features
 
-1. **Objective**: Be the first to complete a line of 3 symbols (horizontal, vertical, or diagonal)
-2. **Turns**: Players alternate placing X and O
-3. **Win**: Complete a line of 3 identical symbols
-4. **Tie**: If the board fills up without a winner
+- Two-player game with automatic turn switching
+- Score tracking for each player
+- Win detection in all directions
+- Clean and responsive design
+- Easy reset functionality
 
-## 🛠️ Technologies used
+## How to play
 
-- **HTML5**: Semantic game structure
-- **CSS3**: Modern styles with gradients and animations
-- **JavaScript ES6+**: Game logic with classes and events
+1. Players alternate placing X and O
+2. First to get 3 in a row (horizontal, vertical, or diagonal) wins
+3. Game ends in a tie if the board fills without a winner
 
-## 📁 Project structure
+## Technologies
 
-```
-tic-tac-toe/
-├── index.html          # Main page
-├── style.css          # Game styles
-├── script.js          # Game logic
-└── README.md          # Documentation
-```
+- HTML5
+- CSS3
+- JavaScript ES6+
 
-## 🚀 Installation and usage
+## Installation
 
-### Option 1: Open directly
-1. Clone or download this repository
-2. Open `index.html` in your web browser
+1. Clone this repository
+2. Open `index.html` in your browser
 3. Start playing!
 
-### Option 2: Local server
+## Local Development
+
 ```bash
-# With Python 3
+# With Python
 python -m http.server 8000
 
-# With Node.js (if you have http-server installed)
+# With Node.js
 npx http-server
 
 # With PHP
 php -S localhost:8000
 ```
 
-Then visit `http://localhost:8000`
+## Deployment
 
-## 🌐 Deployment
+This project can be deployed on any static hosting service:
 
-This project is perfect for deploying on:
+- GitHub Pages
+- Vercel
+- Netlify
+- Render
 
-- **GitHub Pages**: Enable Pages in repository settings
-- **Vercel**: Connect your GitHub repository
-- **Netlify**: Drag the folder or connect with Git
-- **Render**: Deploy as static site
+## Project Structure
 
-## 🎨 Customization
-
-### Change colors
-Edit CSS variables in `style.css`:
-```css
-:root {
-    --primary-color: #667eea;
-    --secondary-color: #764ba2;
-    --win-color: #48bb78;
-}
+```
+tic-tac-toe/
+├── index.html
+├── style.css
+├── script.js
+└── README.md
 ```
 
-### Add sounds
-You can add sound effects by modifying `script.js`:
-```javascript
-// Example sound on click
-const audio = new Audio('click.mp3');
-audio.play();
-```
+## License
 
-## 🤝 Contributing
-
-Contributions are welcome! Some ideas:
-
-- [ ] AI opponent mode
-- [ ] Different visual themes
-- [ ] Sound effects
-- [ ] Online multiplayer mode
-- [ ] Game statistics
-- [ ] Different board sizes
-
-## 📝 License
-
-This project is under the MIT License. Feel free to use and modify it!
-
-## 🎉 Enjoy playing!
-
-Have lots of fun with this classic game! 🎮✨
+MIT License
