@@ -27,14 +27,12 @@ class TicTacToe {
     bindEvents() {
         const cells = document.querySelectorAll('.cell');
         const resetBtn = document.getElementById('reset-btn');
-        const resetScoreBtn = document.getElementById('reset-score-btn');
         
         cells.forEach(cell => {
             cell.addEventListener('click', (e) => this.handleCellClick(e));
         });
         
         resetBtn.addEventListener('click', () => this.resetGame());
-        resetScoreBtn.addEventListener('click', () => this.resetScore());
     }
     
     handleCellClick(event) {
@@ -139,24 +137,18 @@ class TicTacToe {
         this.currentPlayer = 'X';
         this.gameActive = true;
         
-        // Limpiar el tablero visual
+        // Clear visual board
         const cells = document.querySelectorAll('.cell');
         cells.forEach(cell => {
             cell.textContent = '';
             cell.classList.remove('x', 'o', 'winning');
         });
         
-        // Limpiar estado del juego
+        // Clear game status
         document.getElementById('game-status').textContent = '';
         document.getElementById('game-status').classList.remove('win', 'tie');
         
         this.updateDisplay();
-    }
-    
-    resetScore() {
-        this.scores = { X: 0, O: 0 };
-        this.updateScore();
-        this.resetGame();
     }
 }
 
